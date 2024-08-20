@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label id="name-label">Enter Your Name
+                <input id="name" type="text" placeholder="name" required />
+            </label>
+            <label id="email-label">Enter Your Email
+                <input id="email" type="email" placeholder="Email" required />
+            </label>
+            <label id="number-label">Age
+                <input id="number" type="number" min="1" max="100" placeholder="Age" />
+            </label>
+
+            <label for="dropdown">What is your situation?:</label>
+            <select id="dropdown" name="dropdown" required>
+                <option value="option1">Employed</option>
+                <option value="option2">Unemployed</option>
+            </select>
+
+            <label>Choose an option:</label>
+            <label for="option1">
+                <input type="radio" id="option1" name="options" value="option1" required> Option 1
+            </label>
+            <label for="option2">
+                <input type="radio" id="option2" name="options" value="option2" required> Option 2
+            </label>
+
+            <label>Select your interests:</label>
+            <label for="interest1">
+                <input type="checkbox" id="interest1" name="interests" value="interest1"> Interest 1
+            </label>
+            <label for="interest2">
+                <input type="checkbox" id="interest2" name="interests" value="interest2"> Interest 2
+            </label>
+            <label for="interest3">
+                <input type="checkbox" id="interest3" name="interests" value="interest3"> Interest 3
+            </label>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments" rows="4" required></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
